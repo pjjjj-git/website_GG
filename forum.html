@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Build Central Forum</title>
+    <link rel="stylesheet" href="forum-styles.css">
+</head>
+<body class="antialiased">
+    <!-- Main container -->
+    <div class="main-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-container">
+                <!-- Forum Title and Navigation -->
+                <div class="header-nav-group">
+                    <a href="forum.html" class="forum-title">PC Build Central</a>
+                    <nav class="main-nav">
+                        <a href="#" class="nav-link">Home</a>
+                        <a href="#" class="nav-link">Issues</a>
+                        <a href="#" class="nav-link">Guides</a>
+                        <a href="#" class="nav-link">Community</a>
+                    </nav>
+                </div>
+                <!-- Search and User Profile -->
+                <div class="header-user-group">
+                    <input type="text" placeholder="Search..." class="search-input">
+                    <div class="user-profile">
+                        <span id="userDisplay">Welcome, User</span>
+                        <button onclick="logoutUser()" class="logout-btn">Logout</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <!-- Forum Sections -->
+            <section class="forum-sections">
+                <!-- Announcements Section -->
+                <div class="forum-section">
+                    <div class="forum-section-header announcements-header">
+                        Announcements
+                    </div>
+                    <div class="forum-row">
+                        <div class="forum-row-icon">📢</div>
+                        <div class="forum-row-main">
+                            <div class="forum-row-title">
+                                PC won't boot after installing new GPU
+                                <span class="tag-new">New</span>
+                            </div>
+                            <div class="forum-row-desc">
+                                I've just installed a new graphics card, but now my PC won't POST. The fans spin for a second, then everything shuts off. I've re-seated the card and checked the power cables, but no luck. Could it be a PSU issue?
+                            </div>
+                        </div>
+                        <div class="forum-row-stats">
+                            <div class="forum-row-stat">
+                                <span class="stat-num">36</span>
+                                <span class="stat-label">Replies</span>
+                            </div>
+                            <div class="forum-row-stat">
+                                <span class="stat-num">21.1K</span>
+                                <span class="stat-label">Views</span>
+                            </div>
+                        </div>
+                        <div class="forum-row-last">
+                            <div class="forum-row-last-title">
+                                <a href="#">Last reply by PC_Builder_22</a>
+                            </div>
+                            <div class="forum-row-last-meta">
+                                October 26, 2025
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- General Discussion Section -->
+                <div class="forum-section">
+                    <div class="forum-section-header">
+                        General Discussion
+                    </div>
+                    <div class="forum-row">
+                        <div class="forum-row-icon">💬</div>
+                        <div class="forum-row-main">
+                            <div class="forum-row-title">
+                                Question about CPU and motherboard compatibility
+                                <span class="tag-new">New</span>
+                            </div>
+                            <div class="forum-row-desc">
+                                I'm planning a new build and want to pair an Intel i9-14900K with an ASUS ROG Maximus Z790 Hero motherboard. Will these two parts work together out of the box, or do I need to worry about any BIOS updates?
+                            </div>
+                        </div>
+                        <div class="forum-row-stats">
+                            <div class="forum-row-stat">
+                                <span class="stat-num">11</span>
+                                <span class="stat-label">Replies</span>
+                            </div>
+                            <div class="forum-row-stat">
+                                <span class="stat-num">1.6K</span>
+                                <span class="stat-label">Views</span>
+                            </div>
+                        </div>
+                        <div class="forum-row-last">
+                            <div class="forum-row-last-title">
+                                <a href="#">Last reply by Jane Smith</a>
+                            </div>
+                            <div class="forum-row-last-meta">
+                                October 25, 2025
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="forum-section">
+                    <div class="forum-section-header">
+                        Specs & Builds
+                    </div>
+                    <div class="forum-row">
+                        <div class="forum-row-icon">🎮</div>
+                        <div class="forum-row-main">
+                            <div class="forum-row-title">
+                                Best RAM speed for AMD Ryzen 7 7800X3D?
+                                <span class="tag-new">New</span>
+                            </div>
+                            <div class="forum-row-desc">
+                                Building a new gaming rig and not sure what RAM speed is the sweet spot for a Ryzen 7 7800X3D. I've heard DDR5-6000 is ideal, but does anyone have experience with faster kits? Is it worth the extra cost?
+                            </div>
+                        </div>
+                        <div class="forum-row-stats">
+                            <div class="forum-row-stat">
+                                <span class="stat-num">3.4K</span>
+                                <span class="stat-label">Replies</span>
+                            </div>
+                            <div class="forum-row-stat">
+                                <span class="stat-num">360.9K</span>
+                                <span class="stat-label">Views</span>
+                            </div>
+                        </div>
+                        <div class="forum-row-last">
+                            <div class="forum-row-last-title">
+                                <a href="#">Last reply by Alex Chen</a>
+                            </div>
+                            <div class="forum-row-last-meta">
+                                October 24, 2025
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Right section for recent posts or ads -->
+            <aside class="sidebar-container">
+                <!-- Sidebar Block 1 -->
+                <div class="sidebar-block">
+                    <h3 class="sidebar-title">Recent Discussions</h3>
+                    <ul class="sidebar-list">
+                        <li><a href="#" class="sidebar-link">How to choose the right GPU?</a></li>
+                        <li><a href="#" class="sidebar-link">Fixing a corrupted SD card</a></li>
+                        <li><a href="#" class="sidebar-link">Monitor flickering issue solved!</a></li>
+                        <li><a href="#" class="sidebar-link">Seeking advice on building a PC</a></li>
+                    </ul>
+                </div>
+                <!-- Sidebar Block 2 -->
+                <div class="sidebar-block">
+                    <h3 class="sidebar-title">Featured Guide</h3>
+                    <p class="sidebar-text">
+                        <strong class="sidebar-strong">Ultimate PC Maintenance Checklist</strong>
+                        <br>
+                        Learn how to keep your computer running smoothly with this comprehensive guide.
+                    </p>
+                </div>
+            </aside>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2025 PC Build Central. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="forum-script.js"></script>
+</body>
+</html>
